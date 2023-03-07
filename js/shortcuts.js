@@ -5,11 +5,11 @@
   // #todo change to Bing Search Results
   var isResultsPage = document.querySelector('html[xmlns\\:web="http://schemas.live.com/Web/"]');
   if (!isResultsPage) {
-    console.log('not entered');
+    // console.log('not entered');
     return;
   }
 
-  console.log('entered');
+ // console.log('entered');
 
   // Globals
   var KEYS = {UP: 38, DOWN: 40, TAB: 9, J: 74, K: 75, SLASH: 191, ESC: 27};
@@ -31,7 +31,7 @@
     }
 
     // #todo change to Bing Search Box
-    var searchbox = document.querySelector('form[id="sb_form"] textarea[type="search"]:nth-of-type(1)');
+    var searchbox = document.querySelector("input.b_searchbox#sb_form_q, textarea.b_searchbox#sb_form_q");
 
     window.addEventListener('keydown', function(e) {
       e = e || window.event;
@@ -68,13 +68,13 @@
         // Otherwise, force caret to end of text and focus the search box
         searchbox.value = searchbox.value + " ";
         searchbox.focus();
-        console.log('focused-1');
+        // console.log('focused-1');
       }
       else if (shouldActivateSearchAndHighlightText) {
             window.scrollTo(0, 0);
             searchbox.select();
             searchbox.focus();
-            console.log('focused-2');
+            // console.log('focused-2');
         }
     });
 
@@ -85,7 +85,7 @@
       if (!shortcuts.isInputActive() && options.navigateWithJK && e.keyCode == 55) {
         searchbox.value = searchbox.value + " ";
         searchbox.focus();
-        console.log('focused-3');
+        // console.log('focused-3');
       }
     });
 
