@@ -23,6 +23,9 @@ var shortcuts = {
     // Next = J; Previous = K [WARNING: Conflicts with activateSearch. This takes precedence.]
     navigateWithJK: false,
 
+    // Focus with Slash [WARNING: Conflicts with activateSearch. This takes precedence.]
+    focusWithSlash: false,
+
     // Esc = select all text in searchbox
     selectTextInSearchbox: false
   },

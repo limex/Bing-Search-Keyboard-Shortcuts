@@ -14,6 +14,7 @@
     document.getElementById('navigateWithTabs').checked = extOptions.navigateWithTabs;
     document.getElementById('navigateWithArrows').checked = extOptions.navigateWithArrows;
     document.getElementById('navigateWithJK').checked = extOptions.navigateWithJK;
+    document.getElementById('focusWithSlash').checked = extOptions.focusWithSlash;
     document.getElementById('styleSelectedSimple').checked = extOptions.styleSelectedSimple;
     document.getElementById('styleSelectedFancy').checked = extOptions.styleSelectedFancy;
     document.getElementById('activateSearch').checked = extOptions.activateSearch;
@@ -25,6 +26,7 @@
     extOptions.navigateWithTabs = document.getElementById('navigateWithTabs').checked === true;
     extOptions.navigateWithArrows = document.getElementById('navigateWithArrows').checked === true;
     extOptions.navigateWithJK = document.getElementById('navigateWithJK').checked === true;
+    extOptions.focusWithSlash = document.getElementById('focusWithSlash').checked === true;
     extOptions.styleSelectedSimple = document.getElementById('styleSelectedSimple').checked === true;
     extOptions.styleSelectedFancy = document.getElementById('styleSelectedFancy').checked === true;
     extOptions.activateSearch = document.getElementById('activateSearch').checked === true;
